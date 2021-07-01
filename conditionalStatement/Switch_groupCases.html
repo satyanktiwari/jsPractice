@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<HTMl>
+    <main>
+        <body>
+            <!-- Multiple Identical Options in Switch Statements
+If the break statement is omitted from a switch statement's case, 
+the following case statement(s) are executed until a break is encountered. 
+If you have multiple inputs with the same output, you can represent them in a switch statement like this: -->
+            <script>
+                function sequentialSizes(val){
+                    var answer="";
+                    switch(val){
+                        case 1:answer
+                        case 2:answer
+                        case 3:answer
+                            return "Low"
+                            break;
+                        case 4:answer
+                        case 5:answer
+                        case 6:answer
+                            return "Mid";
+                            break;
+                        case 7:answer
+                        case 8:answer
+                        case 9:answer
+                            return "High";
+                            break;
+                    }
+
+                    return answer;
+                }
+                
+                document.write(sequentialSizes(6));
+                // alert();
+            </script>
+        </body>
+    </main>
+</HTMl>
