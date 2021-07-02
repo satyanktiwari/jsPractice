@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<HTMl>
+    <main>
+        <body>
+            <script>
+                var count = 0;
+
+                function cc(card) {
+                // Only change code below this line
+                    switch(card){
+                        case 2:
+                        case 3:arguments
+                        case 4:arguments
+                        case 5:arguments
+                        case 6:arguments
+                            count +=1;
+                            break;
+                        case 7:arguments
+                        case 8:arguments
+                        case 9:arguments
+                            count +=0;
+                            break;
+                        case 10:arguments
+                        case "J":arguments
+                        case "Q":arguments
+                        case "K":arguments
+                        case "A":arguments
+                            count -=1;
+                            break; 
+                        default:arguments
+                            return "invalid argument";
+                            break;
+                    }
+                    if(count > 0){
+                                return count + " Bet"
+                            } else if (count < 0){
+                                return count + " Hold"
+                            } else {
+                                return "inalid argument"
+                            }
+
+
+
+                // return "Change Me";
+                // Only change code above this line
+                }
+
+// cc(2); cc(3); cc(7); cc('K'); cc('A');
+                document.write(cc("T"));
+                // alert();
+            </script>
+        </body>
+    </main>
+</HTMl>
