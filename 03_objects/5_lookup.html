@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<HTMl>
+  <style>
+    
+    .item2{background:black;
+      /* horizontal line number/ vertical/horizontal/vertical */
+      grid-area: 2/2/3/3;
+      color: blanchedalmond;
+      font-size: 2.5rem;
+      flex-wrap: wrap;      
+      align-self: center;
+      justify-self: center;
+      padding: 10px 10px ;
+    }   
+    
+    
+    .container {
+      font-size: 40px;
+      min-height: 1000px;
+      width: 100%;
+      background: LightGray;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 0.5fr 1fr 1fr;
+      /* grid-gap: 10px; */
+    }
+  </style>
+  
+  <body>
+    <div class="container">
+      <div class="item2">
+        <span>
+          <script>
+            // Setup
+            var testObj = {
+              12: "Namath",
+              16: "Montana",
+              19: "Unitas"
+            };
+            
+            // Only change code below this line
+            
+            var playerNumber=16;       // assign 16 to this variable
+            var player = testObj[playerNumber];   // use the variable to look up the player's name and assign it to player
+            document.write(player);
+          </script>
+          <br>
+          
+        </span>
+      </div>
+    </div>
+  </body>
+</HTMl>

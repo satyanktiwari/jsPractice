@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<HTMl>
+  <style>
+    
+    .item2{background:black;
+      /* horizontal line number/ vertical/horizontal/vertical */
+      grid-area: 2/2/3/3;
+      color: blanchedalmond;
+      font-size: 2.5rem;
+      flex-wrap: wrap;
+      text-align: center;
+      align-self: center;
+      justify-self: center;
+      padding: 10px 10px ;}   
+      
+      .container {
+        font-size: 40px;
+        min-height: 1000px;
+        width: 100%;
+        background: LightGray;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr;
+        /* grid-gap: 10px; */
+      }
+    </style>
+    
+    <body>
+      <div class="container">
+        <div class="item2">
+          <!-- Write your code here -->
+          <script>              
+            // Setup
+            function phoneticLookup(val) {
+              var result = "";
+              
+              // Only change code below this line
+              var lookup = {
+                 "alpha":"Adams",
+                
+                 "bravo":
+                 "Boston",
+                
+                 "charlie":
+                 "Chicago",
+                
+                 "delta":
+                 "Denver",
+                
+                 "echo":
+                 "Easy",
+                
+                 "foxtrot":
+                 "Frank"
+              }
+              var lookupValue= val;
+              result = lookup[lookupValue];
+              // Only change code above this line
+              return result;
+            }
+            
+            phoneticLookup("charlie");
+            document.write(" who is "+ phoneticLookup("charlie")+"\n");
+            
+          </script>
+        </div>
+      </div>
+    </body>
+  </HTMl>

@@ -31,25 +31,25 @@
       <div class="item2">
         <span>
           <script>
-            var dogs = {
-              Fido: "Mutt",  Hunter: "Doberman",  Snoopie: "Beagle"
-            };
+            var dogs = {Fido: "Mutt",  Hunter: "Doberman",  Snoopie: "Beagle"};            
             
-            // Only change code below this line
             var myDogs= "Hunter";
             var breed = dogs[myDogs];
             
             document.write(breed +"\n");
-            
-            var someObj = {
-              propName: "John"
-            };
-            function propPrefix(str) {
-              var s = "prop";
-              return s + str;
+            // *********************end of sample 1*******************************
+          </script>
+          <br>
+          <script>
+            var foo = {artistName: "John"};
+
+            function propPrefix(val) {
+              var s = "artist";
+              return s + val;
             }
-            var someProp = propPrefix("Name");
-            console.log(someObj[someProp]);
+            // this will return prop+Name 
+            var bar = propPrefix("Name");
+            document.write(foo[bar]);
           </script>
         </span>
       </div>
