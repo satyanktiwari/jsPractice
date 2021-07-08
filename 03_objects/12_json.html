@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<HTMl>
+  <style>
+    
+    .item2{background:black;
+      /* horizontal line number/ vertical/horizontal/vertical */
+      grid-area: 2/2/3/3;
+      color: blanchedalmond;
+      font-size: 2.5rem;
+      flex-wrap: wrap;
+      text-align: center;
+      align-self: center;
+      justify-self: center;
+      padding: 10px 10px ;}   
+      
+      .container {
+      font-size: 40px;
+      min-height: 1000px;
+      width: 100%;
+      background: LightGray;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 0.5fr 1fr 1fr;
+      /* grid-gap: 10px; */
+    }
+    </style>
+    
+    <body>
+      <div class="container">
+        <div class="item2">
+<!-- 
+  This is an array which contains one object inside. 
+  The object has various pieces of metadata about an album. 
+  It also has a nested formats array. If you want to add more album records, 
+  you can do this by adding records to the top level array. 
+  Objects hold data in a property, which has a key-value format. 
+  In the example above, "artist": "Daft Punk" is a property that has a key of artist 
+  and a value of Daft Punk.              
+  JavaScript Object Notation or JSON is a related data interchange format used to store data. 
+-->
+          <script>     
+          //  Write your code here
+          var myMusic = [
+                {
+                  "artist": "Billy Joel",
+                  "title": "Piano Man",
+                  "release_year": 1973,
+                  "formats": [
+                    "CD",
+                    "8T",
+                    "LP"
+                  ],
+                  "gold": true
+                },{
+                  artist:"Test Punk",
+                  title:"Tester of the year" ,
+                  release_year:2021,
+                  formats:["CD",
+                    "Cassette",
+                    "LP"]
+                    
+                  
+                }
+              ];   
+              // to access a property (which is a key value pair) use this
+              // variable name[position of array]dotKey
+              var albumOne=myMusic[0].artist;
+            document.write(albumOne);
+          </script>
+        </div>
+      </div>
+    </body>
+  </HTMl>

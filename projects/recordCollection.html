@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<HTMl>
+  <style>
+    
+    .item2{background:black;
+      /* horizontal line number/ vertical/horizontal/vertical */
+      grid-area: 1/2/2/3;
+      color: blanchedalmond;
+      font-size: 2.5rem;
+      flex-wrap: wrap;
+      text-align: center;
+      align-self: center;
+      justify-self: center;
+      padding: 10px 10px ;}   
+      
+      .item3{background:grey;
+        /* horizontal line number/ vertical/horizontal/vertical */
+        grid-area: 2/2/3/3;
+        color: blanchedalmond;
+        font-size: 2.5rem;
+        flex-wrap: wrap;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+        padding: 10px 10px ;}   
+        
+        .container {
+          font-size: 40px;
+          min-height: 1000px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 0.5fr 1fr 1fr;
+          /* grid-gap: 10px; */
+        }
+      </style>
+      
+      <body>
+        <div class="container">
+          <div class="item2">
+            <script>     
+              //  Write your code here
+              
+              // Setup
+              var recordCollection = {
+                2548: {
+                  albumTitle: 'Slippery When Wet',
+                  artist: 'Bon Jovi',
+                  tracks: ['Let It Rock', 'You Give Love a Bad Name']
+                },
+                2468: {
+                  albumTitle: '1999',
+                  artist: 'Prince',
+                  tracks: ['1999', 'Little Red Corvette']
+                },
+                1245: {
+                  artist: 'Robert Palmer',
+                  tracks: []
+                },
+                5439: {
+                  albumTitle: 'ABBA Gold'
+                }
+              };
+              
+              // Only change code below this line
+              // 
+              function updateRecords(records, id, prop, value) {
+                // If prop isn't tracks and value isn't an empty string, update or set that album's prop to value.
+                if(prop !="tracks" && value!=""){
+                  records[id][prop]=value;
+                } 
+                // If prop is tracks but the album doesn't have a tracks property, create an empty array and add value to it.
+                else if(prop ==="tracks" && records[id].hasOwnProperty("tracks")===false){
+                  records[id][prop]=value;
+                }
+                // If prop is tracks and value isn't an empty string, add value to the end of the album's existing tracks array.
+                else if(prop ==="tracks" && value!=""){
+                  records[id][prop].push(value);
+                } 
+                // If value is an empty string, delete the given prop property from the album. 
+                else if(value===""){
+                  delete records[id][prop];
+                }
+                // Your function must always return the entire record collection object.
+                return records;
+              }
+              
+              updateRecords(recordCollection, 5439, "tracks", "Take a Chance on Me");
+
+              document.write(recordCollection[5439].tracks);
+            </script>
+          </div>
+          
+          <div class="item3">
+            <script>     
+              //  Write your code here
+              
+              // document.write(testStrict(12));
+            </script>
+          </div>
+        </div>
+      </body>
+    </HTMl>
