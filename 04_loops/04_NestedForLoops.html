@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<HTMl>
+  <style>
+    
+    .item2{background:black;
+      /* horizontal line number/ vertical/horizontal/vertical */
+      grid-area: 1/2/2/3;
+      color: blanchedalmond;
+      font-size: 2.5rem;
+      flex-wrap: wrap;
+      text-align: center;
+      align-self: center;
+      justify-self: center;
+      padding: 10px 10px ;}   
+      
+      .item3{background:grey;
+        /* horizontal line number/ vertical/horizontal/vertical */
+        grid-area: 2/2/3/3;
+        color: blanchedalmond;
+        font-size: 2.5rem;
+        flex-wrap: wrap;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+        padding: 10px 10px ;}   
+        
+        .container {
+          font-size: 40px;
+          min-height: 1000px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 0.5fr 1fr 1fr;
+          /* grid-gap: 10px; */
+        }
+      </style>
+      
+      <body>
+        <div class="container">
+          <div class="item2"><p>Tutorial</p>
+            <!-- For multi dimensional arrays nested for loops -->
+            <script>     
+              //  Write your code here
+              var arr = [
+              [1,2], [3,4], [5,6]
+              ];
+              for (var i=0; i<arr.length; i++){
+                // . Note that for the inner loop, we are checking the .length of arr[i], 
+                // since arr[i] is itself an array.
+                for (j=0; j< arr[i].length; j++){
+                  document.write(arr[i][j]);
+                }
+              }
+              
+            </script>
+          </div>
+          
+          <div class="item3">
+            <p>Excercise</p>
+            <script>     
+              function multiplyAll(arr) {
+                var product = 1;
+                // Only change code below this line
+                for(var i=0; i<arr.length; i++){
+                  for(var j=0; j<arr[i].length;j++){
+                    product*=arr[i][j];
+                  }
+                }
+                // Only change code above this line
+                return product;
+              }
+              
+              document.write(multiplyAll([[1,2],[3,4],[5,6,7]]));
+            </script>
+          </div>
+        </div>
+      </body>
+    </HTMl>

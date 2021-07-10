@@ -38,30 +38,39 @@
     
     <body>
       <div class="container">
-        <div class="item2">
+        <div class="item2"><p>Tutorial</p>
             
           <script>     
           //  Write your code here
-            function testStrict(val){
-              if(val===12){
-                return "Yes it matches"
-              }
-              return "No does not match";
-            }        
-            document.write(testStrict(12));
+          function forarray(){
+            var ourArray=[];
+           for (var i=0; i<5; i++){
+             ourArray.push(i);
+            
+           }
+          //  when using function return array outside the loop
+           return ourArray;
+          }
+          document.write(forarray());
+          
           </script>
         </div>
 
-        <div class="item3">
+        <div class="item3"><p>Excercise</p>
          <script>     
           //  Write your code here
-            function testStrict(val){
-              if(val===13){
-                return "Yes it matches"
-              }
-              return "No does not match";
-            }        
-            document.write(testStrict(12));
+          function myArray(){
+            var meArray=[];
+           for (var i=1; i<6; i++){
+          
+             meArray.push(i)
+           }
+           //  when using function return array outside the loop
+            return meArray;
+          }
+          document.write(myArray());
+         
+  
           </script>
         </div>
       </div>
