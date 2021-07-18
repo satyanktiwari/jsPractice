@@ -39,7 +39,7 @@
       <body>
         <div class="container">
           <div class="item2"><p>Tutorial</p>
-            
+            <!-- https://replit.com/languages/nodejs -->
             <script>     
               //  Write your code here
               
@@ -50,22 +50,28 @@
                   return multiply(arr, n - 1) * arr[n - 1];
                 }
               }
-
-              document.write(multiply([2,2],2))
+              
+              document.write(multiply([1,2,3,4],4))
             </script>
+            <!--
+              Here's a link to visualie the code 
+              http://pythontutor.com/javascript.html#code=function%20multiply%28arr,%20n%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if%20%28n%20%3C%3D%200%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20return%201%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20return%20multiply%28arr,%20n%20-%201%29%20*%20arr%5Bn%20-%201%5D%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%0A%0Aconsole.log%28multiply%28%5B1,2,3,4%5D,4%29%29%3B&curInstr=17&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D
+             -->
           </div>
           
           <div class="item3">
             <p>Excercise</p>
             <script>     
-              //  Write your code here
-              // function testStrict(val){
-              //   if(val===13){
-              //     return "Yes it matches"
-              //   }
-              //   return "No does not match";
-              // }        
-              // document.write(testStrict(12));
+              function countdown(i) {
+                document.write(i)
+                if (i <= 1) {  // base case
+                  return;
+                } else {     // recursive case
+                  countdown(i - 1);
+                }
+              }
+              
+              countdown(7);    // This is the initial call to the function.
             </script>
           </div>
         </div>
