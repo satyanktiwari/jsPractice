@@ -42,13 +42,11 @@
             <!-- For multi dimensional arrays nested for loops -->
             <script>     
               //  Write your code here
-              var arr = [
-              [1,2], [3,4], [5,6]
-              ];
+              var arr = [[1,2], [3,4], [5,6]];
               for (var i=0; i<arr.length; i++){
                 // . Note that for the inner loop, we are checking the .length of arr[i], 
                 // since arr[i] is itself an array.
-                for (j=0; j< arr[i].length; j++){
+                for (var j=0; j< arr[i].length; j++){
                   document.write(arr[i][j]);
                 }
               }

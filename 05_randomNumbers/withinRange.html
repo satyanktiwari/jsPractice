@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<HTMl>
+  <style>
+    
+    .item2{background:black;
+      /* horizontal line number/ vertical/horizontal/vertical */
+      grid-area: 2/2/3/3;
+      color: blanchedalmond;
+      font-size: 2.5rem;
+      flex-wrap: wrap;
+      text-align: center;
+      align-self: center;
+      justify-self: center;
+      padding: 10px 10px ;}      
+      
+      .container {
+      font-size: 40px;
+      min-height: 1000px;
+      width: 100%;
+      background: LightGray;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 0.5fr 1fr 1fr;
+      /* grid-gap: 10px; */
+    }
+    </style>
+    
+    <body>
+      <div class="container">
+        <div class="item2">
+            
+          <script>     
+          //  Write your code here
+            function randomWithinRange(myMin,myMax){
+              var randomRange = Math.floor(Math.random()*(myMax-myMin+1)+myMin);
+              return randomRange;
+            }        
+            document.write(randomWithinRange(5,9));
+          </script>
+        </div>
+      </div>
+    </body>
+  </HTMl>
