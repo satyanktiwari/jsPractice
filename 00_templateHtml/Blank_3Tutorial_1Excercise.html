@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<HTMl>
+  <style>
+    
+    .item1{background:black;
+      /* horizontal line number/ vertical/horizontal/vertical */
+      grid-area: 1/1/2/2;
+      color: blanchedalmond;
+      font-size: 2.5rem;
+      flex-wrap: wrap;
+      text-align: center;
+      align-self: center;
+      justify-self: center;
+      padding: 10px 10px ;}   
+
+      .item2{background:grey;
+      /* horizontal line number/ vertical/horizontal/vertical */
+      grid-area: 1/1/2/3;
+      color: blanchedalmond;
+      font-size: 2.5rem;
+      flex-wrap: wrap;
+      text-align: center;
+      align-self: center;
+      justify-self: center;
+      padding: 10px 10px ;}   
+
+      .item3{background:black;
+      /* horizontal line number/ vertical/horizontal/vertical */
+      grid-area: 1/1/2/4;
+      color: blanchedalmond;
+      font-size: 2.5rem;
+      flex-wrap: wrap;
+      text-align: center;
+      align-self: center;
+      justify-self: center;
+      padding: 10px 10px ;} 
+      
+      .item4{background:grey;
+      /* horizontal line number/ vertical/horizontal/vertical */
+      grid-area: 2/1/2/3;
+      color: blanchedalmond;
+      font-size: 2.5rem;
+      flex-wrap: wrap;
+      text-align: center;
+      align-self: center;
+      justify-self: center;
+      padding: 10px 10px ;}   
+
+      .container {
+      font-size: 40px;
+      min-height: 1000px;
+      width: 100%;
+      background: LightGray;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 0.5fr 1fr 1fr;
+      /* grid-gap: 10px; */
+    }
+    </style>
+    
+    <body>
+      <div class="container">
+        <div class="item1"><p>Tutorial</p>
+            
+          <script>     
+          //  Write your code here
+           
+            document.write("test");
+          </script>
+        </div>
+
+        <div class="item2">
+          <p>Tutorial 2</p>
+         <script>     
+          //  Write your code here
+            function testStrict(val){
+              if(val===13){
+                return "Yes it matches"
+              }
+              return "No does not match";
+            }        
+            document.write(testStrict(12));
+          </script>
+        </div>
+        <div class="item3"><p>Tutorial 3</p>
+            
+          <script>     
+          //  Write your code here
+           
+            document.write("test3");
+          </script>
+        </div>
+
+        <div class="item4"><p>Excercise</p>
+            
+          <script>     
+          //  Write your code here
+           
+            document.write("your fuction goes here");
+          </script>
+        </div>
+      </div>
+    </body>
+  </HTMl>

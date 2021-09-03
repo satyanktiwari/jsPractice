@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<HTMl>
+  <style>
+    
+    .item1{background:black;
+      /* horizontal line number/ vertical/horizontal/vertical */
+      grid-area: 1/1/2/2;
+      color: blanchedalmond;
+      font-size: 2.5rem;
+      flex-wrap: wrap;
+      text-align: center;
+      align-self: center;
+      justify-self: center;
+      padding: 10px 10px ;}   
+
+      .item2{background:grey;
+      /* horizontal line number/ vertical/horizontal/vertical */
+      grid-area: 1/1/2/3;
+      color: blanchedalmond;
+      font-size: 2.5rem;
+      flex-wrap: wrap;
+      text-align: center;
+      align-self: center;
+      justify-self: center;
+      padding: 10px 10px ;}   
+
+      .item3{background:black;
+      /* horizontal line number/ vertical/horizontal/vertical */
+      grid-area: 1/1/2/4;
+      color: blanchedalmond;
+      font-size: 2.5rem;
+      flex-wrap: wrap;
+      text-align: center;
+      align-self: center;
+      justify-self: center;
+      padding: 10px 10px ;} 
+      
+      .item4{background:grey;
+      /* horizontal line number/ vertical/horizontal/vertical */
+      grid-area: 2/1/2/3;
+      color: blanchedalmond;
+      font-size: 2.5rem;
+      flex-wrap: wrap;
+      text-align: center;
+      align-self: center;
+      justify-self: center;
+      padding: 10px 10px ;}   
+
+      .container {
+      font-size: 40px;
+      min-height: 1000px;
+      width: 100%;
+      background: LightGray;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 0.5fr 1fr 1fr;
+      /* grid-gap: 10px; */
+    }
+    </style>
+    
+    <body>
+      <div class="container">
+        <div class="item1"><p>Tutorial</p>
+            
+          <script>     
+            //  pass argument to an arrow function
+             const doubler =(item)=>item*2
+              document.write(doubler(4));
+            </script>
+        </div>
+
+        <div class="item2">
+          <p>Tutorial 2</p>
+          <!-- If an arrow function has a single parameter, 
+            the parentheses enclosing the parameter may be omitted. -->
+            <script>     
+              //  Write your code here
+              const test = item => item * 4
+                document.write(test(4));
+              </script>
+        </div>
+
+
+
+        <div class="item3"><p>Tutorial 3</p>
+            
+          <script>     
+          //  It is possible to pass more than one argument into an arrow function.
+           const multipleArgs = (item,multi)=> item * multi;
+
+            document.write(multipleArgs(2,3));
+          </script>
+        </div>
+
+        <div class="item4"><p>Excercise</p>
+            
+          <script>     
+          //  Write your code here
+          const myConcat = (arr1, arr2) => arr1.concat(arr2);
+            document.write(myConcat([1, 2], [3, 4, 5]));
+          </script>
+        </div>
+      </div>
+    </body>
+  </HTMl>
