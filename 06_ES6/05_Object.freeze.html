@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<HTMl>
+  <style>
+    
+    .item2{background:black;
+      /* horizontal line number/ vertical/horizontal/vertical */
+      grid-area: 2/2/3/3;
+      color: blanchedalmond;
+      font-size: 2.5rem;
+      flex-wrap: wrap;
+      text-align: center;
+      align-self: center;
+      justify-self: center;
+      padding: 10px 10px ;}      
+      
+      .container {
+        font-size: 40px;
+        min-height: 1000px;
+        width: 100%;
+        background: LightGray;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr;
+        /* grid-gap: 10px; */
+      }
+    </style>
+    
+    <body>
+      <div class="container">
+        <div class="item2">
+          <!-- How to make the variable declared with const as immutable
+          - use the Object.freeze(objectName)
+          -->
+          <script>     
+            function freezeObj() {
+              const MATH_CONSTANTS = {
+                PI: 3.14
+              };
+              // This will make the object above, immutable
+              Object.freeze(MATH_CONSTANTS);
+              
+              // This will now result into an error
+              try {
+                MATH_CONSTANTS.PI = 99;
+              } catch(ex) {
+                console.log(ex);
+              }
+              return MATH_CONSTANTS.PI;
+            }
+            const PI = freezeObj();     
+            document.write(freezeObj());
+          </script>
+        </div>
+      </div>
+    </body>
+  </HTMl>
