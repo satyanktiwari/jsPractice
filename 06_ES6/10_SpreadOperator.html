@@ -95,11 +95,17 @@
         </div>
 
         <div class="item4"><p>Excercise</p>
-            
+            <!-- 
+              arr2 should be correct copy of arr1.
+              ... spread operator should be used to duplicate arr1.
+              arr2 should remain unchanged when arr1 is changed.
+             -->
           <script>     
           //  Write your code here
-           
-            document.write("your fuction goes here");
+            const arr1=['jan','feb','mar','apr']
+            let arr2;
+            arr2 = [...arr1];//this is the use of spread opreator to copy the array
+            document.write(arr2);
           </script>
         </div>
       </div>
