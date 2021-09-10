@@ -6,6 +6,7 @@
       /* horizontal line number/ vertical/horizontal/vertical */
       grid-area: 1/1/2/2;
       color: blanchedalmond;
+      grid-gap:10px;
       font-size: 2.5rem;
       flex-wrap: wrap;
       text-align: center;
@@ -47,7 +48,7 @@
       padding: 10px 10px ;}   
 
       .container {
-      font-size: 40px;
+      font-size: 40px;    
       min-height: 1000px;
       width: 100%;
       background: LightGray;
@@ -61,26 +62,27 @@
     
     <body>
       <div class="container">
-        <div class="item1"><p>Tutorial</p>
+        <div class="item1"><p>Max value in Array</p>
             
-          <script>     
-          //  Write your code here
-           
-            document.write("test");
+          <script>  
+            //e.g.  given in fcc
+          const arr = [6, 89, 3, 45];
+          const maximus = Math.max(...arr);
+            document.write(maximus);
+
           </script>
         </div>
 
         <div class="item2">
-          <p>Tutorial 2</p>
+          <p>Min value in Array</p>
          <script>     
           //  Write your code here
-            function testStrict(val){
-              if(val===13){
-                return "Yes it matches"
-              }
-              return "No does not match";
+            function min(){
+              const arr = [6, 89, 3, 45];
+              const min = Math.min(...arr);
+              return min;
             }        
-            document.write(testStrict(12));
+            document.write(min());
           </script>
         </div>
         <div class="item3"><p>Tutorial 3</p>
