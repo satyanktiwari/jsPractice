@@ -12,115 +12,130 @@
       align-self: center;
       justify-self: center;
       padding: 10px 10px ;}   
-
-      .item2{background:grey;
-      /* horizontal line number/ vertical/horizontal/vertical */
-      grid-area: 1/2/2/3;
-      color: blanchedalmond;
-      font-size: 2.5rem;
-      flex-wrap: wrap;
-      text-align: center;
-      align-self: center;
-      justify-self: center;
-      padding: 10px 10px ;}   
-
-      .item3{background:black;
-      /* horizontal line number/ vertical/horizontal/vertical */
-      grid-area: 1/3/2/5;
-      color: blanchedalmond;
-      font-size: 2rem;
-      flex-wrap: wrap;
-      text-align: center;
-      align-self: center;
-      justify-self: center;
-      padding: 10px 10px ;} 
       
-      .item4{background:grey;
-      /* horizontal line number/ vertical/horizontal/vertical */
-      grid-area: 2/1/2/2;
-      color: blanchedalmond;
-      font-size: 2.5rem;
-      flex-wrap: wrap;
-      text-align: center;
-      align-self: center;
-      justify-self: center;
-      padding: 10px 10px ;}   
-/* 5 column, 3 rows */
-      .container {
-      font-size: 40px;
-      min-height: 100px;
-      width: 100%;
-      background: LightGray;
-      grid-column-gap: 50px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 2fr 1fr;
-      /* grid-gap: 10px; */
-    }
-    .container p{
-      text-align: left;
-      font-size: 1.5rem;
-    }
-    .container h3{
-      text-align: center;
-      padding: 0 0 0 0;
-    }
-    </style>
-    
-    <body>
-      <div class="container">
-        <div class="item1">
-          <h3>Es5</h3>
-          <p>
-            Use Destructuring Assignment to Extract Values from Objects<br>
-           
-        </p>
-            
-          <script>     
-          //  ES5 syntax
-           function destructuringInEs5(){
-             const user ={name:"John Doe", age:24}
-           const name = user.name;
-           const age = user.age;
-           return "Name of Student is "+ name +"<br>"+ "Age is "+ age;
-           }
-           
-            document.write(destructuringInEs5());
-          </script>
-        </div>
+      .item2{background:grey;
+        /* horizontal line number/ vertical/horizontal/vertical */
+        grid-area: 1/2/2/3;
+        color: blanchedalmond;
+        font-size: 2.5rem;
+        flex-wrap: wrap;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+        padding: 10px 10px ;}   
+        
+        .item3{background:black;
+          /* horizontal line number/ vertical/horizontal/vertical */
+          grid-area: 1/3/2/5;
+          color: blanchedalmond;
+          font-size: 2rem;
+          flex-wrap: wrap;
+          text-align: center;
+          align-self: center;
+          justify-self: center;
+          padding: 10px 10px ;} 
+          
+          .item4{background:grey;
+            /* horizontal line number/ vertical/horizontal/vertical */
+            grid-area: 2/1/2/2;
+            color: blanchedalmond;
+            font-size: 2.5rem;
+            flex-wrap: wrap;
+            text-align: center;
+            align-self: center;
+            justify-self: center;
+            padding: 10px 10px ;}   
+            /* 5 column, 3 rows */
+            .container {
+              font-size: 40px;
+              min-height: 100px;
+              width: 100%;
+              background: LightGray;
+              grid-column-gap: 50px;
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+              grid-template-rows: 1fr 2fr 1fr;
+              /* grid-gap: 10px; */
+            }
+            .container p{
+              text-align: left;
+              font-size: 1.5rem;
+            }
+            .container h3{
+              text-align: center;
+              padding: 0 0 0 0;
+            }
+          </style>
+          
+          <body>
+            <div class="container">
+              <div class="item1">
+                <h3>Es5 Syntax</h3>
+                <p>
+                  Use Destructuring Assignment to Extract Values from Objects<br>
+                  const name = user.name;<br>
+                  const age = user.age
+                  
+                </p>
+                
+                <script>     
+                  //  ES5 syntax
+                  function destructuringInEs5(){
+                    const user ={name:"John Doe", age:24}
+                    const name = user.name;
+                    const age = user.age;
+                    return "Name of Student is "+ name +"<br>"+ "Age is "+ age;
+                  }
+                  
+                  document.write(destructuringInEs5());
+                </script>
+              </div>
+              
+              <div class="item2">
+                <h3>ES6 Tutorial</h3>
+                <p>In Es6 this can be achieved by const { name, age } = user;</p>
+                <script>     
+                  //  Write your code here
+                  function destructuringInEs6(){
+                    const user={name:"Peter parker", age:25};
+                    const {name, age} = user;
+                    return "Name of Student is "+ name +"<br>"+ "Age is "+ age;
+                  }        
+                  document.write(destructuringInEs6());
+                </script>
+              </div>
+              <div class="item3"><h3>Es6 Excercise</h3>
+                <p>
+                  Replace the two assignments with an equivalent destructuring assignment.<br> 
+                  It should still assign the variables today and tomorrow the values of today and tomorrow
+                  from the HIGH_TEMPERATURES object.
+                </p> 
+                <script>     
+                  //  Write your code here
+                  
+                  // document.write("test3");
+                </script>
+              </div>
+              
+              <div class="item4"><h3>Excercise</h3>
+                
+                <script>     
+                  //  Write your code here
+                  function extractFewValues(){
+                    const HIGH_TEMPERATURES = {
+                    yesterday: 75,
+                    today: 77,
+                    tomorrow: 80
+                  };
+                  const{today,tomorrow} = HIGH_TEMPERATURES;
+                  return "Today's temp is "+ today+"<br>"+" Tomorrow temp will be "+tomorrow;
+                  }
 
-        <div class="item2">
-          <h3>Tutorial 2</h3>
-         <script>     
-          //  Write your code here
-            function testStrict(val){
-              if(val===13){
-                return "Yes it matches"
-              }
-              return "No does not match";
-            }        
-            document.write(testStrict(12));
-          </script>
-        </div>
-        <div class="item3"><h3>Tutorial 3</h3>
-          <p>
-            
-          </p> 
-          <script>     
-          //  Write your code here
-           
-            document.write("test3");
-          </script>
-        </div>
-
-        <div class="item4"><h3>Excercise</h3>
-            
-          <script>     
-          //  Write your code here
-           
-            document.write("your fuction goes here");
-          </script>
-        </div>
-      </div>
-    </body>
-  </HTMl>
+                                                 
+                  
+                  document.write(extractFewValues());
+                </script>
+              </div>
+            </div>
+          </body>
+        </HTMl>
