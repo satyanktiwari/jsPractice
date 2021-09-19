@@ -76,7 +76,7 @@
                   function assignNewVariableName(){
                     const user = { name: 'John Doe', age: 34 };
                     const{name:userName, age:userAge}= user;
-                    return "Name of user is: "+ userName + "<b>"+ " age of user is: "+userAge;
+                    return "Name of user is: "+ userName + "<br>"+ " age of user is: "+userAge;
                     }
                     
                     document.write(assignNewVariableName());
@@ -114,7 +114,7 @@
                       };
                       
                       const{today:highTodday, tomorrow:highTomorrow}=HIGH_TEMPERATURES;
-                      return "Today's temp is: "+ highTodday + "<b>"+ " Tomorrow it is going to be: "+highTomorrow;
+                      return "Today's temp is: "+ highToday + "<br>"+ " Tomorrow it is going to be: "+highTomorrow;
                     }
                     document.write(getTemprature());
                   </script>
