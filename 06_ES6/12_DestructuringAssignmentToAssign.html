@@ -6,7 +6,7 @@
       /* horizontal line number/ vertical/horizontal/vertical */
       grid-area: 1/1/2/2;
       color: blanchedalmond;
-      font-size: 2rem;
+      font-size: 2.5rem;
       flex-wrap: wrap;
       text-align: center;
       align-self: center;
@@ -17,7 +17,7 @@
         /* horizontal line number/ vertical/horizontal/vertical */
         grid-area: 1/2/2/3;
         color: blanchedalmond;
-        font-size: 2rem;
+        font-size: 2.5rem;
         flex-wrap: wrap;
         text-align: center;
         align-self: center;
@@ -39,7 +39,7 @@
             /* horizontal line number/ vertical/horizontal/vertical */
             grid-area: 2/1/2/2;
             color: blanchedalmond;
-            font-size: 2rem;
+            font-size: 2.5rem;
             flex-wrap: wrap;
             text-align: center;
             align-self: center;
@@ -48,7 +48,7 @@
             /* 5 column, 3 rows */
             .container {
               font-size: 40px;
-              min-height: 1000px;
+              min-height: 100px;
               width: 100%;
               background: LightGray;
               grid-column-gap: 50px;
@@ -69,42 +69,56 @@
           
           <body>
             <div class="container">
-              <div class="item1"><h3>Tutorial</h3>
+              <div class="item1"><h3>Tutorial 1</h3>
                 
                 <script>     
                   //  Write your code here
-                  
-                  document.write("test");
-                </script>
-              </div>
-              
-              <div class="item2">
-                <h3>Tutorial 2</h3>
-                <script>     
-                  //  Write your code here
+                  function assignNewVariableName(){
+                    const user = { name: 'John Doe', age: 34 };
+                    const{name:userName, age:userAge}= user;
+                    return "Name of user is: "+ userName + "<b>"+ " age of user is: "+userAge;
+                    }
+                    
+                    document.write(assignNewVariableName());
+                  </script>
+                </div>
+                
+                <div class="item2">
+                  <h3>Tutorial 2</h3>
+                  <script>     
+                    //  Write your code here
      
-                  document.write("Nothing here");
-                </script>
-              </div>
-              <div class="item3"><h3>Tutorial 3</h3>
-                <p>
-                  
-                </p> 
-                <script>     
-                  //  Write your code here
-                  
-                  document.write("Nothing here");
-                </script>
-              </div>
-              
-              <div class="item4"><h3>Excercise</h3>
+                    document.write("Nothing here");
+                  </script>
+                </div>
+                <div class="item3"><h3>Tutorial 3</h3>
+                  <p>
+                    
+                  </p> 
+                  <script>     
+                    //  Write your code here
+                    
+                    document.write("Nothing here");
+                  </script>
+                </div>
                 
-                <script>     
-                  //  Write your code here
+                <div class="item4"><h3>Excercise</h3>
                   
-                  document.write("your fuction goes here");
-                </script>
+                  <script>     
+                    //  Write your code here
+                    function getTemprature(){
+                      const HIGH_TEMPERATURES = {
+                        yesterday: 75,
+                        today: 77,
+                        tomorrow: 80
+                      };
+                      
+                      const{today:highTodday, tomorrow:highTomorrow}=HIGH_TEMPERATURES;
+                      return "Today's temp is: "+ highTodday + "<b>"+ " Tomorrow it is going to be: "+highTomorrow;
+                    }
+                    document.write(getTemprature());
+                  </script>
+                </div>
               </div>
-            </div>
-          </body>
-        </HTMl>
+            </body>
+          </HTMl>
