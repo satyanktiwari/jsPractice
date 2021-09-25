@@ -81,13 +81,13 @@
                   The console should display the values 1, 2 and [3, 4, 5,6,7].
                 </p>
                 <div class="formatted">
-                <script>     
-                  //  Write your code here
-                  const[a,b,...newArray]=[1,2,3,4,5,6,7]
-                  document.write("Value of a is: "+a+"<br>");
-                  document.write("Value of b is: "+b+"<br>");
-                  document.write("Value of newArray is: "+newArray+"<br>");
-                </script>
+                  <script>     
+                    //  Write your code here
+                    const[a,b,...newArray]=[1,2,3,4,5,6,7]
+                    document.write("Value of a is: "+a+"<br>");
+                    document.write("Value of b is: "+b+"<br>");
+                    document.write("Value of newArray is: "+newArray+"<br>");
+                  </script>
                 </div>
               </div>
               
@@ -101,22 +101,25 @@
               </div>
               <div class="item3"><h3>Tutorial 3</h3>
                 <p>
-                  
+                  Use destructuring assignment with the rest parameter to perform an effective Array.prototype.slice()<br>
+                  so that arr is a sub-array of the original array source with the first two elements omitted.
                 </p> 
                 <script>     
                   //  Write your code here
                   
-                  document.write("Nothing here");
+                  // document.write("Nothing here");
                 </script>
               </div>
               
               <div class="item4"><h3>Excercise</h3>
-                
-                <script>     
-                  //  Write your code here
-                  
-                  document.write("your fuction goes here");
-                </script>
+                <div class="formatted">
+                  <script>     
+                    const source = [1,2,3,4,5,6,7,8,9,10];
+                    const[a,b,...arr]=source;
+                    
+                    document.write(arr);
+                  </script>
+                </div>
               </div>
             </div>
           </body>
