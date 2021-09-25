@@ -54,7 +54,7 @@
               grid-column-gap: 50px;
               display: grid;
               grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-              grid-template-rows: 1fr 2fr 1fr;
+              grid-template-rows: 1.5fr 1.5fr 1fr;
               /* grid-gap: 10px; */
             }
             .container p{
@@ -75,18 +75,18 @@
             <div class="container">
               <div class="item1"><h3>Use Destructuring Assignment with the Rest Parameter to Reassign Array Elements</h3>
                 <p>
-                  const [a, b, ...arr] = [1, 2, 3, 4, 5,6,7];<br>
+                  const [a, b, ...newArray] = <br>[1, 2, 3, 4, 5,6,7];<br>
                   console.log(a, b);<br>
-                  console.log(arr);<br>
-                  The console should display the values 1, 2 and [3, 4, 5, 7].
+                  console.log(newArray);<br>
+                  The console should display the values 1, 2 and [3, 4, 5,6,7].
                 </p>
                 <div class="formatted">
                 <script>     
                   //  Write your code here
-                  const[a,b,...arr]=[1,2,3,4,5,6,7]
+                  const[a,b,...newArray]=[1,2,3,4,5,6,7]
                   document.write("Value of a is: "+a+"<br>");
-                  document.write("Value of a is: "+b+"<br>");
-                  document.write("Value of a is: "+arr+"<br>");
+                  document.write("Value of b is: "+b+"<br>");
+                  document.write("Value of newArray is: "+newArray+"<br>");
                 </script>
                 </div>
               </div>
