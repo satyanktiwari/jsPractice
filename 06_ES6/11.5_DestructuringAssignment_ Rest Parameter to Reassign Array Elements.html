@@ -4,7 +4,7 @@
     
     .item1{background:black;
       /* horizontal line number/ vertical/horizontal/vertical */
-      grid-area: 1/1/2/2;
+      grid-area: 1/2/2/1;
       color: blanchedalmond;
       font-size: 2rem;
       flex-wrap: wrap;
@@ -15,7 +15,7 @@
       
       .item2{background:grey;
         /* horizontal line number/ vertical/horizontal/vertical */
-        grid-area: 1/2/2/3;
+        grid-area: 1/4/2/3;
         color: blanchedalmond;
         font-size: 2rem;
         flex-wrap: wrap;
@@ -26,7 +26,7 @@
         
         .item3{background:black;
           /* horizontal line number/ vertical/horizontal/vertical */
-          grid-area: 1/3/2/5;
+          grid-area: 1/6/2/5;
           color: blanchedalmond;
           font-size: 2rem;
           flex-wrap: wrap;
@@ -37,7 +37,7 @@
           
           .item4{background:grey;
             /* horizontal line number/ vertical/horizontal/vertical */
-            grid-area: 2/3/2/2;
+            grid-area: 2/4/3/1;
             color: blanchedalmond;
             font-size: 2rem;
             flex-wrap: wrap;
@@ -65,52 +65,48 @@
               text-align: center;
               padding: 0 0 0 0;
             }
+            .formatted{
+              text-align: left;
+              background-color:darkred;
+            }
           </style>
           
           <body>
             <div class="container">
-              <div class="item1"><h3>Destructuring an Array</h3>
-                
+              <div class="item1"><h3>Use Destructuring Assignment with the Rest Parameter to Reassign Array Elements</h3>
+                <p>
+                  const [a, b, ...arr] = [1, 2, 3, 4, 5,6,7];<br>
+                  console.log(a, b);<br>
+                  console.log(arr);<br>
+                  The console should display the values 1, 2 and [3, 4, 5, 7].
+                </p>
+                <div class="formatted">
                 <script>     
                   //  Write your code here
-                  function destructureAnArray(){
-                    const [a,b]=[1,2,3,4,5,6]
-                    return "value of a is: "+a+"<br>"
-                    + " value of b is: "+b;
-                  }
-                  document.write(destructureAnArray());
+                  const[a,b,...arr]=[1,2,3,4,5,6,7]
+                  document.write("Value of a is: "+a+"<br>");
+                  document.write("Value of a is: "+b+"<br>");
+                  document.write("Value of a is: "+arr+"<br>");
                 </script>
-                <p>The variable a is assigned the first value of the array, <br>
-                  and b is assigned the second value of the array. <br>
-                  </p>
+                </div>
               </div>
               
               <div class="item2">
-                <h3>access the value at any index</h3>
-                <p>
-                  We can also access the value at any index in an array with destructuring<br>
-                   by using commas to reach the desired index:
-                </p>
+                <h3>Tutorial 2</h3>
                 <script>     
-                  function accessValueAtDesiredUndex(){
-                    const [a,b,,,c]=[1,2,3,4,5,6]
-                    return "value of a is: "+ a +"<br>"
-                    + " value of b is: "+ b + "<br>"
-                    + " value of c is: "+c;
-                  }
-                  document.write(accessValueAtDesiredUndexw ());
+                  //  Write your code here
+                  
+                  document.write("Nothing here");
                 </script>
               </div>
-
               <div class="item3"><h3>Tutorial 3</h3>
                 <p>
-                  Use destructuring assignment to swap the values of a and b so that a receives the value stored in b,<br>
-                   and b receives the value stored in a<br>
-                   let a = 8, b = 6;
+                  
                 </p> 
                 <script>     
                   //  Write your code here
-
+                  
+                  document.write("Nothing here");
                 </script>
               </div>
               
@@ -118,10 +114,7 @@
                 
                 <script>     
                   //  Write your code here
-                  let a = 8, b = 6;
-                  [b,a]=[a,b];
-                  document.write("Value of a is: "+a+"<br>");
-                  document.write("Value of b is: "+b);
+                  
                   document.write("your fuction goes here");
                 </script>
               </div>
