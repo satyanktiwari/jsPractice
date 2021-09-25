@@ -37,7 +37,7 @@
           
           .item4{background:grey;
             /* horizontal line number/ vertical/horizontal/vertical */
-            grid-area: 2/4/3/1;
+            grid-area: 2/5/3/2;
             color: blanchedalmond;
             font-size: 2rem;
             flex-wrap: wrap;
@@ -99,7 +99,8 @@
                   document.write("Nothing here");
                 </script>
               </div>
-              <div class="item3"><h3>Tutorial 3</h3>
+
+              <div class="item3"><h3>Excercise</h3>
                 <p>
                   Use destructuring assignment with the rest parameter to perform an effective Array.prototype.slice()<br>
                   so that arr is a sub-array of the original array source with the first two elements omitted.
@@ -111,11 +112,17 @@
                 </script>
               </div>
               
-              <div class="item4"><h3>Excercise</h3>
+              <div class="item4"><h3>Solution</h3>
                 <div class="formatted">
                   <script>     
                     const source = [1,2,3,4,5,6,7,8,9,10];
-                    const[a,b,...arr]=source;
+                    function removeFirstTwo(list) {
+                      // Only change code below this line
+                      const [a,b,...arr] = list; // Change this line
+                      // Only change code above this line
+                      return arr;
+                    }
+                    const arr = removeFirstTwo(source);
                     
                     document.write(arr);
                   </script>
