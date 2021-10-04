@@ -71,45 +71,46 @@
               padding: 5 5 5 5;
             }
             pre{
-              margin-left:-200px;
+              margin-left:-365px;
             }
             code{
               
               font-family: monospace;
-              font-weight: 400;
-              font-size: 1.2rem;
             }
           </style>
           
           <body>
             <div class="container">
-              <div class="item1"><h3>Create Strings using Template Literals</h3>
+              <div class="item1"><h3>Excercise</h3>
                 <div class="formatted">
-                  <code>
-                    <script>
-                      
-                      const person = {
-                        name: "Zodiac Hasbro",
-                        age: 56
+                  <pre>
+                    <code>
+                      const person()={
+                        name:"Taylor",
+                        sayHello:function(){
+                          return `Hello my name is $(this.name).`
+                        }
                       };
-                      const greeting = `Hello my name is ${person.name}!
-                      And my age is ${person.age}`
-                      
-                      document.write(greeting);
-                      
-                    </script>
-                  </code>
+                      This can be written w/o the<br>
+                      :(colon) and function keyword
+                    </code>
+                  </pre>
                 </div>
               </div>
               
               <div class="item2">
-                <h3>Tutorial 2</h3>
+                <h3>Concise declarative function</h3>
                 <div class="formatted">
-                  <script>     
-                    //  Write your code here
-                    
-                    document.write("Nothing here");
-                  </script>
+                  <pre>
+                    <code>
+                      const person()={
+                        name:"Taylor",
+                        sayHello(){
+                          return `Hello my name is $(this.name).`;
+                        }
+                      };
+                    </code>
+                  </pre>
                 </div>
               </div>
               <div class="item3"><h3>Tutorial 3</h3>
@@ -119,50 +120,40 @@
                 <div class="formatted">
                   <pre>
                     <code>
-                      const result = {
-                        success: ["max-length", "no-amd", "prefer-arrow-functions"],
-                        failure: ["no-var", "var-on-top", "linebreak"],
-                        skipped: ["no-extra-semi", "no-dup-keys"]
+                      // Only change code below this line
+                      const bicycle = {
+                        gear: 2,
+                        setGear: function(newGear) {
+                          this.gear = newGear;
+                        }
                       };
-                      function makeList(arr) {
-                        // Only change code below this line
-                        const failureItems = [];
-                        // Only change code above this line
-                        
-                        return failureItems;
-                      }
-                      
-                      const failuresList = makeList(result.failure);
+                      // Only change code above this line
+                      bicycle.setGear(3);
+                      console.log(bicycle.gear);
                     </code>
                   </pre>
                 </div>
               </div>
               
               <div class="item4"><h3>Excercise</h3>
+                <p>
+                  First using setGearfunction set the new gear <br>
+                  then with bicycle.gear get the new number
+                </p>
                 <div class="formatted">
                   <script>     
-                    const result = {
-                      success: ["max-length", "no-amd", "prefer-arrow-functions"],
-                      failure: ["no-var", "var-on-top", "linebreak"],
-                      skipped: ["no-extra-semi", "no-dup-keys"]
-                    };
-                    function makeList(arr) {
-                      // Only change code below this line
-                      const failureItems = [];
-                      for(let i=0; i<arr.length;i++){
-                        failureItems.push(`<li class="text-warning">${arr[i]}</li>`)}
-                        // Only change code above this line
-                        
-                        return failureItems;
+                    const bicycle ={
+                      gear:2,
+                      setGear(newGear){
+                        this.gear= newGear;
                       }
-                      
-                      // const failuresList = makeList(result.failure);
-                      const successList= makeList(result.success);
-                      
-                      document.write(successList);
-                    </script>
-                  </div>
+                    }
+                    bicycle.setGear(5)
+                    document.write(bicycle.gear);
+                  </script>
+
                 </div>
               </div>
-            </body>
-          </HTMl>
+            </div>
+          </body>
+        </HTMl>
