@@ -81,64 +81,56 @@
           
           <body>
             <div class="container">
-              <div class="item1"><h3>Export to Share a Code Block</h3>
+              <div class="item1"><h3>Test method</h3>
                 <div class="formatted">
+                  <p>
+                    Note that quotes not required for regex pattern
+                  </p>
                   <pre>
                     <code>
-                      Single function can be exported as
-                      export const  add=(x,y)=>{
-                        retrun x+y;
-                      }                     
+                      let testStr = "freecodecamp";
+                      let testRegex = /code/;
+                      testRegex.test(testStr);
                     </code>
                   </pre>
                 </div>
               </div>
               
               <div class="item2">
-                <h3>Export multiple function syntax</h3>
+                <h3>Using the script</h3>
                 <div class="formatted">
-                  <pre>
-                    <code>
-                      const add =(x,y)=>{
-                        return x+y;
-                      }
-                      const subtract =(x,y)=>{
-                        return x-y;
-                      }
-                      export{add, subtract};
-                    </code>
-                  </pre>
-                </div>
-              </div>
-              <div class="item3"><h3>Challenge</h3>
-                <p>
-                  There are two string-related functions in the editor. 
-                  Export both of them using the method of your choice.
-                </p> 
-                <div class="formatted">
-                <!-- <script>     
-                  //  Write your code here
-                  
-                  document.write("Nothing here");
-                </script> -->
+                  <script>     
+                    //  Write your code here
+                    let testStr = "freecodecamp";
+                    let testRegex = /code/;
+                    testRegex.test(testStr);
+                    document.write(testRegex.test(testStr));
+                  </script>
                 </div>
               </div>
               
-              <div class="item4"><h3>Solution</h3>
+              <div class="item3"><h3>Challenge</h3>
+                <pre>
+                  <code>
+                      let myString = "Hello, World!";
+                      let myRegex = /Hello/;
+                      let result = myRegex; // Change this line
+                  </code>
+                </pre>
                 <div class="formatted">
-                <script>     
-                  //  Write your code here
-                  const uppercaseString = (string)=> {
-                    return string.toUpperCase() ;
-                  }
-                  const lowercaseString = (string) => {
-                    return string.toLowerCase();
-                  }
-                  
-                  export{uppercaseString, lowercaseString};
 
-                  document.write(upperCaseString("test"));
-                </script>
+                </div>
+              </div>
+              
+              <div class="item4"><h3>Excercise</h3>
+                <div class="formatted">
+                  <script>     
+                    //  Write your code here
+                    var myString = "Hello, World!";
+                    var myRegex = /Hello/;
+                    var result = myRegex.test(myString);
+                    document.write(result);
+                  </script>
                 </div>
               </div>
             </div>
