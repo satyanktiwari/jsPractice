@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<HTMl>
+  <style>
+    
+    .item1{background:black;
+      /* horizontal line number/ vertical/horizontal/vertical */
+      grid-area: 1/2/2/1;
+      color: blanchedalmond;
+      font-size: 2rem;
+      flex-wrap: wrap;
+      text-align: center;
+      align-self: center;
+      justify-self: center;
+      padding: 10px 10px ;}   
+      
+      .item2{background:grey;
+        /* horizontal line number/ vertical/horizontal/vertical */
+        grid-area: 1/4/2/3;
+        color: blanchedalmond;
+        font-size: 2rem;
+        flex-wrap: wrap;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+        padding: 10px 10px ;}   
+        
+        .item3{background:black;
+          /* horizontal line number/ vertical/horizontal/vertical */
+          grid-area: 1/6/2/5;
+          color: blanchedalmond;
+          font-size: 2rem;
+          flex-wrap: wrap;
+          text-align: center;
+          align-self: center;
+          justify-self: center;
+          padding: 10px 10px ;} 
+          
+          .item4{background:grey;
+            /* horizontal line number/ vertical/horizontal/vertical */
+            grid-area: 2/5/3/2;
+            color: blanchedalmond;
+            font-size: 2rem;
+            flex-wrap: wrap;
+            text-align: center;
+            align-self: center;
+            justify-self: center;
+            padding: 10px 10px ;}   
+            /* 5 column, 3 rows */
+            .container {
+              font-size: 40px;
+              min-height: 1000px;
+              width: 100%;
+              background: LightGray;
+              grid-column-gap: 50px;
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+              grid-template-rows: 1.5fr 1.5fr 1fr;
+              /* grid-gap: 10px; */
+            }
+            .container p{
+              text-align: left;
+              font-size: 1.5rem;
+            }
+            .container h3{
+              text-align: center;
+              padding: 0 0 0 0;
+            }
+            .formatted{
+              text-align: left;
+              background-color:darkred;
+              padding: 5 5 5 5;
+            }
+            pre{
+              margin-left:-375px;
+            }
+            code{
+              
+              font-family: monospace;
+            }
+          </style>
+          
+          <body>
+            <div class="container">
+              <div class="item1"><h3>Create and arry</h3>
+                <div class="formatted">
+                  <pre>
+                    <code>
+                      let romanNumerals =['XXI','XXII'];
+                      
+                      This is a simple array
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              
+              <div class="item2">
+                <h3>Use unshift()</h3>
+                <div class="formatted">
+                  
+                  <p>
+                    This is used to add values
+                    to start of an array.
+                  </p>
+                  <pre>
+                    <code>
+                      romanNumerals.unshift('XIX','XX');
+                    </code>
+                  </pre>
+                  <script>     
+                    //  Write your code here
+                    let romanNumerals =['XXI','XXII'];
+                    romanNumerals.unshift('XIX','XX');
+                    let posZ = romanNumerals[0];
+                    document.write("item @ POS 0 is: "+ posZ);
+                  </script>
+                </div>
+              </div>
+              <div class="item3"><h3>push()</h3>
+                <p>
+                  Use this to append to end of array
+                </p> 
+                <pre>
+                  <code>
+                      let myromanNumerals =['XIX','XX','XXI','XXII'];
+                      myromanNumerals.push('XXIII');
+                  </code>
+                </pre>
+                <div class="formatted">
+                  <script>     
+                    //  Write your code here
+                    let myromanNumerals =['XIX','XX','XXI','XXII'];
+                    myromanNumerals.push('XXIII');
+                    let lastPos = myromanNumerals[4]
+                    document.write("item at last pos: "+ lastPos);
+                  </script>
+                </div>
+              </div>
+              
+              <div class="item4"><h3>Chalenge</h3>
+                <div class="formatted">
+                  <script>     
+                    //  Write your code here
+                    // let arr = ['IV', 5, 'six'];
+                    function mixedNumber(arr){
+                      arr.unshift('I', 2, 'three' );
+                      arr.push(7, 'VIII', 9);
+
+                      return arr;
+                    }
+                    
+                    document.write(mixedNumber(['IV', 5, 'six']));
+                  </script>
+                </div>
+              </div>
+            </div>
+          </body>
+        </HTMl>
