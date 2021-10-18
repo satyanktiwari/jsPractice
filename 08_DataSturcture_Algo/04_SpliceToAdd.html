@@ -87,7 +87,15 @@
                 <div class="formatted">
                   <pre>
                     <code>
-                        
+                      const numbers = [10, 11, 12, 12, 15];
+                      const startIndex = 3;
+                      const amountToDelete = 1;//number of items to delte
+                      
+                      numbers.splice(startIndex, amountToDelete, 13, 14);
+                      console.log(numbers);
+                      
+                      Any parameter after 2nd is added to the array
+                      at the same startIndex.
                     </code>
                   </pre>
                 </div>
@@ -96,33 +104,50 @@
               <div class="item2">
                 <h3>Tutorial 2</h3>
                 <div class="formatted">
-                <script>     
-                  //  Write your code here
-     
-                  document.write("Nothing here");
-                </script>
+                  <script>     
+                    //  Write your code here
+                    const numbers = [10,11,12,12,15];
+                    const startIndex = 3;
+                    const amountToDelete = 1;//number of items to delte
+                    numbers.splice(startIndex,amountToDelete,13,14)
+                    document.write(numbers);
+                  </script>
                 </div>
               </div>
-              <div class="item3"><h3>Tutorial 3</h3>
-                <p>
-                  
-                </p> 
+              <div class="item3"><h3>Challenge</h3>
+                <pre>
+                  <code>
+                    function htmlColorNames(arr) {
+                      // Only change code below this line
+                      
+                      // Only change code above this line
+                      return arr;
+                    }
+                    
+                    console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 
+                    'LavenderBlush', 'PaleTurquoise', 'FireBrick']));
+                  </code>
+                </pre> 
                 <div class="formatted">
-                <script>     
-                  //  Write your code here
-                  
-                  document.write("Nothing here");
-                </script>
+                  <script>     
+                    //  Write your code here
+                    
+                    // document.write("Nothing here");
+                  </script>
                 </div>
               </div>
               
-              <div class="item4"><h3>Excercise</h3>
+              <div class="item4"><h3>Solution</h3>
                 <div class="formatted">
-                <script>     
-                  //  Write your code here
-                  
-                  document.write("your fuction goes here");
-                </script>
+                  <script>     
+                  let colorNames=['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']
+                    function htmlColorNames(arr){
+                      arr.splice(0,2,'DarkSalmon','BlanchedAlmond')
+                      return arr;
+                    }
+                    
+                    document.write(htmlColorNames(colorNames));
+                  </script>
                 </div>
               </div>
             </div>
