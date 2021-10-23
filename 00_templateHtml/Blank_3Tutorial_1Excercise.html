@@ -1,32 +1,10 @@
 <!DOCTYPE html>
 <HTMl>
   <style>
-    #navbar {
-      grid-area: 1/1/5/2;          
-      position: fixed;
-      min-width: 290px;
-      top: 20px;
-      left: 10px;
-      width: 300px;
-      height: 100%;
-      border-right: solid;
-      border-color: rgba(0, 22, 22, 0.4);
-    }
-    header {
-      display: block;
-      color: var(--color-header-text);
-      margin: 10px;
-      text-align: center;
-      font-size: 1.8em;
-      font-weight: thin;
-    }
-    #main-doc header {
-      text-align: left;
-      margin: 0px;
-    }
+    
     .item1{background:black;
       /* horizontal line number/ vertical/horizontal/vertical */
-      grid-area: 1/3/2/6;
+      grid-area: 1/2/2/1;
       color: blanchedalmond;
       font-size: 2rem;
       flex-wrap: wrap;
@@ -37,7 +15,7 @@
       
       .item2{background:grey;
         /* horizontal line number/ vertical/horizontal/vertical */
-        grid-area: 2/3/3/6;
+        grid-area: 1/4/2/3;
         color: blanchedalmond;
         font-size: 2rem;
         flex-wrap: wrap;
@@ -48,7 +26,7 @@
         
         .item3{background:black;
           /* horizontal line number/ vertical/horizontal/vertical */
-          grid-area: 3/3/4/6;
+          grid-area: 1/6/2/5;
           color: blanchedalmond;
           font-size: 2rem;
           flex-wrap: wrap;
@@ -59,7 +37,7 @@
           
           .item4{background:grey;
             /* horizontal line number/ vertical/horizontal/vertical */
-            grid-area: 4/3/5/6;
+            grid-area: 2/5/3/2;
             color: blanchedalmond;
             font-size: 2rem;
             flex-wrap: wrap;
@@ -75,8 +53,8 @@
               background: LightGray;
               grid-column-gap: 50px;
               display: grid;
-              grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-              grid-template-rows: 1fr 1fr 1fr 1fr;
+              grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+              grid-template-rows: 1.5fr 1.5fr 1fr;
               /* grid-gap: 10px; */
             }
             .container p{
@@ -93,81 +71,60 @@
               padding: 5 5 5 5;
             }
             pre{
-              margin-left:-375px;
+              margin-left:-200px;
             }
             code{
               
               font-family: monospace;
+              font-weight: 400;
+              font-size: 1.2rem;
             }
           </style>
           
           <body>
-            <main id="main-doc">
-              <nav id="navbar">
-                <header>CSS Houdini MDN</header>
-                  <ul>
-                    <li>
-                      <a class="nav-link" href="#item1">item1</a>
-                    </li>
-                    <li>
-                      <a class="nav-link" href="#item2">item2</a>
-                    </li>
-                    <li>
-                      <a class="nav-link" href="#item3">item3</a>
-                    </li>
-                    <li>
-                      <a class="nav-link" href="#item4">#item4</a>
-                    </li>
-                    <li>
-                      <a class="nav-link" href="#Reference">Ref FCC</a>
-                    </li>
-                    
-                    
-                  </ul>
-              </nav>
-              <div class="container">
-                <div class="item1" id="item1"><h3>What is this?</h3>
-                  <div class="formatted">
-                    <pre>
-                      <code>
+            <div class="container">
+              <div class="item1"><h3>Excercise</h3>
+                <div class="formatted">
+                  <pre>
+                    <code>
                         
-                      </code>
-                    </pre>
-                  </div>
-                </div>
-                
-                <div class="item2" id="item2">
-                  <h3>Example</h3>
-                  <div class="formatted">
-                    <pre>
-                      <code>
-                        
-                      </code>
-                    </pre>
-                  </div>
-                </div>
-                <div class="item3" id="item3"><h3>Challenge</h3>
-                  <p>
-                    
-                  </p> 
-                  <div class="formatted">
-                    <pre>
-                      <code>
-                        
-                      </code>
-                    </pre>
-                  </div>
-                </div>
-                
-                <div class="item4" id="item4"><h3>Solution</h3>
-                  <div class="formatted">
-                    <script>     
-                      //  Write your code here
-                      
-                      document.write("your fuction goes here");
-                    </script>
-                  </div>
+                    </code>
+                  </pre>
                 </div>
               </div>
-            </body>
-          </HTMl>
+              
+              <div class="item2">
+                <h3>Tutorial 2</h3>
+                <div class="formatted">
+                <script>     
+                  //  Write your code here
+     
+                  document.write("Nothing here");
+                </script>
+                </div>
+              </div>
+              <div class="item3"><h3>Tutorial 3</h3>
+                <p>
+                  
+                </p> 
+                <div class="formatted">
+                <script>     
+                  //  Write your code here
+                  
+                  document.write("Nothing here");
+                </script>
+                </div>
+              </div>
+              
+              <div class="item4"><h3>Excercise</h3>
+                <div class="formatted">
+                <script>     
+                  //  Write your code here
+                  
+                  document.write("your fuction goes here");
+                </script>
+                </div>
+              </div>
+            </div>
+          </body>
+        </HTMl>
