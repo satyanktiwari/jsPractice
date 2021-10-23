@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<HTMl>
+  <style>
+    
+    .item1{background:black;
+      /* horizontal line number/ vertical/horizontal/vertical */
+      grid-area: 1/2/2/1;
+      color: blanchedalmond;
+      font-size: 2rem;
+      flex-wrap: wrap;
+      text-align: center;
+      align-self: center;
+      justify-self: center;
+      padding: 10px 10px ;}   
+      
+      .item2{background:grey;
+        /* horizontal line number/ vertical/horizontal/vertical */
+        grid-area: 1/4/2/3;
+        color: blanchedalmond;
+        font-size: 2rem;
+        flex-wrap: wrap;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+        padding: 10px 10px ;}   
+        
+        .item3{background:black;
+          /* horizontal line number/ vertical/horizontal/vertical */
+          grid-area: 1/6/2/5;
+          color: blanchedalmond;
+          font-size: 2rem;
+          flex-wrap: wrap;
+          text-align: center;
+          align-self: center;
+          justify-self: center;
+          padding: 10px 10px ;} 
+          
+          .item4{background:grey;
+            /* horizontal line number/ vertical/horizontal/vertical */
+            grid-area: 2/5/3/2;
+            color: blanchedalmond;
+            font-size: 2rem;
+            flex-wrap: wrap;
+            text-align: center;
+            align-self: center;
+            justify-self: center;
+            padding: 10px 10px ;}   
+            /* 5 column, 3 rows */
+            .container {
+              font-size: 40px;
+              min-height: 1000px;
+              width: 100%;
+              background: LightGray;
+              grid-column-gap: 50px;
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+              grid-template-rows: 1.5fr 1.5fr 1fr;
+              /* grid-gap: 10px; */
+            }
+            .container p{
+              text-align: left;
+              font-size: 1.5rem;
+            }
+            .container h3{
+              text-align: center;
+              padding: 0 0 0 0;
+            }
+            .formatted{
+              text-align: left;
+              background-color:darkred;
+              padding: 5 5 5 5;
+            }
+            pre{
+              margin-left:-200px;
+            }
+            code{
+              
+              font-family: monospace;
+              font-weight: 400;
+              font-size: 1.2rem;
+            }
+          </style>
+          
+          <body>
+            <div class="container">
+              <div class="item1"><h3>Excercise</h3>
+                <div class="formatted">
+                  <pre>
+                    <code>
+                      const numbers = [10, 11, 12, 12, 15];
+                      const startIndex = 3;
+                      const amountToDelete = 1;//number of items to delte
+                      
+                      numbers.splice(startIndex, amountToDelete, 13, 14);
+                      console.log(numbers);
+                      
+                      Any parameter after 2nd is added to the array
+                      at the same startIndex.
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              
+              <div class="item2">
+                <h3>Tutorial 2</h3>
+                <div class="formatted">
+                  <script>     
+                    //  Write your code here
+                    const numbers = [10,11,12,12,15];
+                    const startIndex = 3;
+                    const amountToDelete = 1;//number of items to delte
+                    numbers.splice(startIndex,amountToDelete,13,14)
+                    document.write(numbers);
+                  </script>
+                </div>
+              </div>
+              <div class="item3"><h3>Challenge</h3>
+                <pre>
+                  <code>
+                    function htmlColorNames(arr) {
+                      // Only change code below this line
+                      
+                      // Only change code above this line
+                      return arr;
+                    }
+                    
+                    console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 
+                    'LavenderBlush', 'PaleTurquoise', 'FireBrick']));
+                  </code>
+                </pre> 
+                <div class="formatted">
+                  <script>     
+                    //  Write your code here
+                    
+                    // document.write("Nothing here");
+                  </script>
+                </div>
+              </div>
+              
+              <div class="item4"><h3>Solution</h3>
+                <div class="formatted">
+                  <script>     
+                  let colorNames=['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']
+                    function htmlColorNames(arr){
+                      arr.splice(0,2,'DarkSalmon','BlanchedAlmond')
+                      return arr;
+                    }
+                    
+                    document.write(htmlColorNames(colorNames));
+                  </script>
+                </div>
+              </div>
+            </div>
+          </body>
+        </HTMl>
